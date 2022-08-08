@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SoundRecorder</string>
+    <string name="mode_audio_recorder">AudioRecorder</string>
+    <string name="mode_media_recorder">MediaRecorder</string>
+
+    <string name="stopping">停止中</string>
+    <string name="recording">録音中</string>
+    <string name="playing">再生中</string>
+    <string name="record">録音</string>
+    <string name="play">再生</string>
+    <string name="stop">停止</string>
+</resources>
