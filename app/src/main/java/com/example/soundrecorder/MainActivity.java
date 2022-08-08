@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
 
-/*    //下のオーバーライドまで追加(setcontentviewの項) 2/2
+    //下のオーバーライドまで追加(setcontentviewの項) 2/2
     private SoundPool mSePlayer;
     private final static int MAX_STREAMS = 10;
     private int[] mSound = new int[1];
-*/
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-/*        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         mSePlayer = new SoundPool(MAX_STREAMS,AudioManager.STREAM_MUSIC,0);
-        mSound[0] = mSePlayer.load(getApplicationContext(),R.raw.ultra,1);
+        mSound[0] = mSePlayer.load(getApplicationContext(),R.raw.hundredsamples,1);
         Button b1 = (Button) this.findViewById(R.id.button);
         b1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 mSePlayer.play(mSound[0],1.0f,1.0f,0,0,1.0f);
             }
         });
-        */
+
     }
 
     @Override
